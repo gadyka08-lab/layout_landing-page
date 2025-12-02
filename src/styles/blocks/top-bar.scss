@@ -1,0 +1,25 @@
+.top-bar{
+  //padding: 24px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.top-bar__logo{
+ display: flex;
+}
+
+.top-bar__icons{
+ display: flex;
+ gap: 24px;
+}
+
+.menu_top{
+  margin-bottom: 30px;
+}
+
+.menu-content{
+  padding-inline: 20px;
+}

@@ -1,0 +1,40 @@
+.menu__nav{
+  margin-top: 50px;
+}
+
+.nav__list{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 32px;
+}
+
+.nav__link{
+  color: #FFF;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+
+}
+
+.menu__bottom{
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-end;
+ margin-top: 50px;
+ //padding: 380px 99px 31px 20px ;
+}
+
+.call_order{
+ display: block;
+ width: fit-content;
+ border-bottom: 1px solid #FFF;
+ font-size: 12px;
+ line-height: 16px;
+ letter-spacing: 2px;
+ color: #FFF;
+ text-decoration: none;
+}
