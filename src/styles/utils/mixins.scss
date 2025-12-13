@@ -9,7 +9,7 @@
 @mixin constent-pading-inline() {
   padding-inline: 20px;
 
-  @include on-tablet(){
+  @include on-tablet{
     padding-inline: 72px;
 
 
