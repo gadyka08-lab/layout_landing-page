@@ -15,8 +15,8 @@
 
 
     <link rel="stylesheet"
-    href="./styles/style.scss">
-    <script src="scripts/main.js"
+    href="src/styles/style.scss">
+    <script src="src/scripts/main.js"
     defer></script>
   </head>
   <!-- #endregion-->
@@ -25,13 +25,35 @@
   <body class="page__body">
     <header class="header">
       <div class="top-bar">
-        <a class="top-bar__logo" href="#">
-          <img src="images/THE_MET_logo.png" alt="The Met logo">
+        <a href="#" class="top-bar__logo-link" >
+          <img src="src/images/THE_MET_logo.png"
+          alt="The Met logo"
+          class="top-bar__logo">
         </a>
 
 
         <div class="top-bar__icons">
-          <a href="#" class="icon icon--phone"></a>
+
+
+          <div class="tooltip">
+            <div class="tooltip__block">
+              <p class="tooltip__text">
+                THE MET FIFTH AVENUE
+              </p>
+              <a href="tel:+12125357710"
+              class="tooltip__link">
+              +1 212-535-7710
+              </a>
+              <p class="tooltip__text">
+                THE MET CLOISTERS
+              </p>
+              <a href="tel:+12129233700"
+              class="tooltip__link">
+              +1 212-923-3700
+              </a>
+            </div>
+            <a href="#" class="icon icon--phone"></a>
+          </div>
           <a href="#menu" class="icon icon--menu"></a>
         </div>
       </div>
@@ -45,7 +67,7 @@
     <aside class="menu page__menu" id="menu">
       <div class="top-bar menu_top">
         <a class="top-bar__logo" href="#">
-          <img src="images/THE_MET_logo.png" alt="The Met logo">
+          <img src="src/images/THE_MET_logo.png" alt="The Met logo">
         </a>
 
 

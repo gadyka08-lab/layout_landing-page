@@ -1,0 +1,36 @@
+@mixin on-tablet {
+
+  @media (min-width: $tablet-min-width) {
+   @content;
+
+  }
+}
+
+@mixin constent-pading-inline() {
+  padding-inline: 20px;
+
+  @include on-tablet(){
+    padding-inline: 72px;
+
+
+  }
+}
+
+@mixin top-bar-met-logo-size() {
+  height: 65px;
+  width: 87px;
+
+}
+
+@mixin top-bar-icon-size() {
+  width: 32px;
+  height: 32px;
+}
+
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.3s;
+
+    &:hover{
+      #{$property}: $toValue;
+    }
+}

@@ -1,25 +1,54 @@
+
+
 .top-bar{
-  //padding: 24px 20px 40px;
+  padding-block: 24px;
+  @include constent-pading-inline;
+
+ // padding: 24px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
-  width: 100%;
+
+  @include on-tablet {
+    padding-block: 64px;
+
+  }
+
+
+  &__logo-link{
+    display: flex;
+
+    @include on-tablet {
+      height: 87px;
+      width: 65px;
+    }
+
+
+
+
+  }
+
+  &__logo{
+    height: 46px;
+    width: 64px;
+
+    @include onTablet{
+      height: 65px;
+      width: 87px;
+    }
+
+    @include hover (transform, scale(1.2) );
+
+
+  }
+
+  &__icons{
+   display: flex;
+   gap: 24px;
+
+  }
+
+
+
 }
 
-.top-bar__logo{
- display: flex;
-}
-
-.top-bar__icons{
- display: flex;
- gap: 24px;
-}
-
-.menu_top{
-  margin-bottom: 30px;
-}
-
-.menu-content{
-  padding-inline: 20px;
-}

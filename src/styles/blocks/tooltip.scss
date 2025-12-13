@@ -1,0 +1,57 @@
+.tooltip{
+  position: relative;
+  text-align: right;
+  display: block;
+
+
+
+  @include on-tablet {
+    &:hover .tooltip__block {
+      opacity: 1;
+      transition: opacity 0;
+      z-index: 1;
+    }
+  }
+
+  &__block {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: -80%;
+    left: -650%;
+
+    transition: opacity 0.3s, z-index 0.3s;
+
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Cinzel, serif;
+    text-wrap: nowrap;
+    color: $aside-menu-color;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+
+
+  }
+
+  &__link {
+    font-size: 16px;
+    font-family: Cinzel, serif;
+    line-height: 27px;
+    font-weight: 700;
+    color: $aside-menu-color;
+    text-decoration: none;
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin-bottom: 18px;
+
+    text-wrap: nowrap;
+  }
+}
+
+
