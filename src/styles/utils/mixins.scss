@@ -6,13 +6,18 @@
   }
 }
 
+@mixin onDesktop {
+  @media(min-width: $desktop-min-width){
+    @content
+
+  }
+}
+
 @mixin constent-pading-inline() {
   padding-inline: 20px;
 
   @include on-tablet{
     padding-inline: 72px;
-
-
   }
 }
 
