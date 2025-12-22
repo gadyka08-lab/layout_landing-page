@@ -1,0 +1,51 @@
+.section-title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: Cinzel, serif;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  text-align: left;
+  margin-bottom: 40px;
+
+  @include on-tablet{
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+
+  @include on-desktop{
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+
+
+}
+
+.section-title--align--left{
+ text-align: left;
+ margin-bottom: 32px;
+ padding-left: 72px;
+
+
+
+  @include on-desktop{
+   margin-bottom: 48px;
+  }
+  @include on-tablet {
+    margin-bottom: 48px;
+  }
+
+  &::before {
+    content: "plan your visit";
+    color: $aside-red-color;
+    font-style: 700;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 0;
+
+
+  }
+
+}
