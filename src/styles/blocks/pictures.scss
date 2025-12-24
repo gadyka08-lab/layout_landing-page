@@ -1,19 +1,114 @@
 
-//.pictures{
+.pictures{
 
-//  &__photos{
-//    display: grid;
-//    width: 100%;
-//    row-gap: 48px;
-//    grid-template-columns: repeat(1, 1fr);
-
-
-//  }
-//}
+ &__photos{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
 
 
 
 
+    @include on-tablet{
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 24px;
+
+    }
+    @include on-desktop{
+      grid-template-columns: repeat(12, 1fr);
+      row-gap: 24px;
+    }
+
+  }
+
+  &__link--big{
+    background-image: url(/src/images/pictures/gallary/mob/1big.png);
+    background-size: cover;
+    grid-template: repeat(1, 1fr);
+    grid-column: 1 / -1;
+    width: 130px;
+    height: 130px;
+
+
+    @include on-tablet{
+      background-image: url(/src/images/pictures/gallary/mob/1big.png);ч
+      grid-template-columns: repeat(6, 1fr);
+      grid-column: 1 / 5;
+      width: 392px;
+      height: 186px;
+
+    }
+    @include on-desktop{
+      grid-template-columns: repeat(12, 1fr);
+      grid-column: 1 / 9;
+      width: 672px;
+      height: 320px;
+
+
+    }
+    &__link--small{
+      grid-template: repeat(1, 1fr);
+      grid-column: 2 / -1;
+      width: 130px;
+      height: 130px;
+
+
+      @include on-tablet{
+        grid-template-columns: repeat(6, 1fr);
+        grid-column: 5/ -1;
+        width: 184px;
+        height: 186px;
+      }
+
+      @include on-desktop{
+       grid-template-columns: repeat(12, 1fr);
+        grid-column: 9 / -1;
+        width: 324px;
+        height: 320px;
+
+
+      }
+
+
+  }
+
+  &__photo{
+   min-width: 100%;
+
+
+  }
+
+  &--second-line{
+   display: grid;
+   width: 100%;
+   row-gap: 20px;
+   grid-template-columns: repeat(0.75, 1fr);
+   grid-column: 1 / -1;
+
+      @include on-tablet {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 24px;
+        grid-column: 1 / 5;
+
+        &:last-child{
+        display:none;
+        }
+
+      }
+
+      @include on-desktop{
+        grid-template-columns: repeat(6, 1fr);
+        row-gap: 24px;
+        grid-column: 1 / -1;
+      }
+  }
+}
 
 
 
+
+
+
+
+}
