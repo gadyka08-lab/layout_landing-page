@@ -1,16 +1,13 @@
 
 .pictures{
 
- &__photos{
+  &__photos{
     display: grid;
     width: 100%;
     row-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
 
-
-
-
-    @include on-tablet{
+      @include on-tablet{
       grid-template-columns: repeat(6, 1fr);
       row-gap: 24px;
 
@@ -20,19 +17,21 @@
       row-gap: 24px;
     }
 
+
   }
 
   &__link--big{
-    background-image: url(/src/images/pictures/gallary/mob/1big.png);
-    background-size: cover;
+   // background-image: url(/src/images/pictures/gallary/mob/1big.png);
+
     grid-template: repeat(1, 1fr);
     grid-column: 1 / -1;
-    width: 130px;
+
     height: 130px;
+    width: 130px;
 
 
     @include on-tablet{
-      background-image: url(/src/images/pictures/gallary/mob/1big.png);ч
+     background-image: url(/src/images/pictures/gallary/tablet/1big.png);
       grid-template-columns: repeat(6, 1fr);
       grid-column: 1 / 5;
       width: 392px;
@@ -69,7 +68,7 @@
 
 
       }
-
+    }
 
   }
 
@@ -77,38 +76,50 @@
    min-width: 100%;
 
 
-  }
 
-  &--second-line{
-   display: grid;
-   width: 100%;
-   row-gap: 20px;
-   grid-template-columns: repeat(0.75, 1fr);
-   grid-column: 1 / -1;
+    &--second-line{
+     display: grid;
+     width: 100%;
+     row-gap: 8px;
+     grid-template-columns: repeat(0.75, 1fr);
+     grid-column: 1 / -1;
+     height: 87px;
+     width: 88px;
 
       @include on-tablet {
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 24px;
-        grid-column: 1 / 5;
-
-        &:last-child{
-        display:none;
+       grid-template-columns: repeat(4, 1fr);
+       row-gap: 24px;
+       grid-column: 1 / 5;
+       height: 284px;
+       width: 288px;
+        .pictures__photo--second-line:last-of-type{
+          display: none;
         }
 
+
+
       }
+
+    }
 
       @include on-desktop{
         grid-template-columns: repeat(6, 1fr);
         row-gap: 24px;
         grid-column: 1 / -1;
       }
+
   }
-}
-
-
-
-
-
-
 
 }
+
+
+//.pictures__photo--second-line:last-of-type{
+  //display: none;
+ //row-gap: 8px;
+//}
+
+
+
+
+
+
