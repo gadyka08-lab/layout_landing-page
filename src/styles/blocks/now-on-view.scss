@@ -31,7 +31,6 @@
 
 
 .now-on-view__title{
-  grid-area: now-on-view__title;
   background-color:yellow;
   font-family: Cinzel, serif;
   font-weight: 700;
@@ -51,46 +50,22 @@
   font-size: 48px;
   }
 
-}
-
-.now-on-view__subtitle{
-  grid-area: now-on-view__subtitle;
-  background-color: green;
-  font-family: Cinzel, serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: $main-page-color;
-  line-height: 27px;
-  letter-spacing: 0;
-  text-align: center;
-  margin-top: 8px;
-}
-
-
-
-
-.pictures__title{
-  font-family: Cinzel;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0px;
-  color: $aside-red-color;
+  &:after{
+    content: 'Explore exhibition gallery guides, videos, articles, and more.';
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: $main-page-color;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
 
 }
 
-.pictures__data{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0px;
-  color: $main-page-color;
 
 
-}
-// .pictures__link--big{
-//   background-image: ;
-//  height: ;
-//  width: ;
-//}
+
+
