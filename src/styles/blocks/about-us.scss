@@ -1,9 +1,10 @@
 :root{
-  --count-columns: 2;
+  --count-columns: 6;
 }
 
 .about-us {
   display: grid;
+
   grid-template-columns: repeat(var(--count-columns), 1fr);
   column-gap: 20px;
   margin-top: 100px;
@@ -11,6 +12,9 @@
 
   @include on-desktop{
     --count-columns:12;
+    
+    grid-template-columns: repeat(var(--count-columns), 1fr);
+
 
     column-gap: 24px;
     margin-top: 138px;
@@ -20,16 +24,19 @@
   @include on-tablet{
     --count-columns: 6;
 
+    grid-template-columns: repeat(var(--count-columns), 1fr);
+
     column-gap: 24px;
     margin-top: 140px;
 
   }
 
   &__schedule {
+    grid-template-columns: repeat(var(--count-columns), 1fr);
     grid-column: 1 / -1;
 
     @include on-desktop {
-      grid-column: 7 /-1;
+      grid-column: 4 /12;
     }
   }
 
@@ -37,14 +44,14 @@
     font-size: 24px;
     margin-bottom: 16px;
     margin-top: 24px;
-    grid-column: auto;
+    grid-column: 1/4;
 
     @include on-tablet {
-      grid-column: 1 / 6 ;
+      grid-column: 1 / 4;
     }
 
     @include on-desktop {
-      grid-column: 1 / 6  ;
+      grid-column: 1 / 6;
     }
 
   }
@@ -57,7 +64,7 @@
     // border: 1px solid red;
 
     @include on-desktop{
-      grid-template-columns: 180px 2fr;
+      grid-template-columns: 180px 1fr;
     }
 
     @include on-tablet {
@@ -92,6 +99,10 @@
 
 }
 
+.about-us__art:first-child:first-child{
+  grid-column: 1 / 7;
+}
+
 .section{
   display: block;
   unicode-bidi: isolate;
@@ -100,7 +111,5 @@
 
 
 
-.article:first-child{
- grid-column: 1 / 7;
-}
+
 

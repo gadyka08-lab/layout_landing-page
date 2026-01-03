@@ -4,7 +4,6 @@
 
   &__pictures{
     display: grid;
-    row-gap: 48px;
     column-gap: 20px;
     grid-template-columns: 1fr;
 
@@ -24,21 +23,63 @@
 
   }
 
+  &__button-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 
+    @include on-tablet{
+      grid-template-columns: repeat(6, 1fr);
+
+    }
+
+    @include on-desktop{
+      grid-template-columns: repeat(12, 1fr);
+
+    }
+
+
+  }
+
+
+
+  &__button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $aside-menu-color;
+    background-color: $aside-red-color;
+    justify-content: center;
+    margin-top: 40px;
+    justify-self: center;
+
+    // padding-inline: 20px;
+
+    @include on-tablet{
+      width: 100%;
+      max-width: 392px;
+      grid-column: span 4;
+    }
+
+    @include on-desktop{
+      width: 100%;
+      max-width: 324px;
+      grid-column:span 4;
+    }
+  }
 }
-
-
-
 
 .now-on-view__title{
   background-color:yellow;
-  font-family: Cinzel, serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.5px;
   text-align: center;
   margin-top: 100px;
+
 
   @include on-tablet{
   margin-top: 140px;
@@ -50,7 +91,7 @@
   font-size: 48px;
   }
 
-  &:after{
+  &::after{
     content: 'Explore exhibition gallery guides, videos, articles, and more.';
     display: block;
     font-weight: 400;
@@ -59,8 +100,9 @@
     line-height: 27px;
     letter-spacing: 0;
     text-align: center;
-    margin-top: 0px;
+    margin-top:0;
     margin-bottom: 48px;
+
   }
 
 }

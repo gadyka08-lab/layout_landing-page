@@ -2,10 +2,10 @@
   margin: 0;
   font-weight: 700;
   font-size: 32px;
-  font-family: Cinzel, serif;
   line-height: 48px;
   letter-spacing: -1.5px;
   margin-bottom: 40px;
+  text-align: center;
 
   @include on-tablet{
     font-size: 48px;
@@ -17,37 +17,37 @@
     margin-bottom: 48px;
   }
 
+  &--align--left{
+    margin-bottom: 32px;
+    text-align:left;
 
-}
+      @include on-desktop{
+       padding-left: 72px;
+       text-align: left;
+      }
 
-.section-title--align--left{
-  margin-bottom: 32px;
-  text-align:left;
+     @include on-tablet {
+       text-align: left;
+       padding-left: 72px;
 
-    @include on-desktop{
-     padding-left: 72px;
-     text-align: left;
+      }
+
+    &::before {
+      content: "plan your visit";
+      color: $aside-red-color;
+      font-style: 700;
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: 0;
+      display: block;
+      margin-bottom: 0;
+
+
     }
-
-   @include on-tablet {
-     text-align: left;
-     padding-left: 72px;
-
-    }
-
-  &::before {
-    content: "plan your visit";
-    color: $aside-red-color;
-    font-style: 700;
-    font-size: 12px;
-    line-height: 140%;
-    letter-spacing: 0;
-    display: block;
-    margin-bottom: 0;
-
 
   }
 
 }
+
 
 

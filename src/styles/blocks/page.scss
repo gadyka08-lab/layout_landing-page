@@ -8,6 +8,8 @@ scroll-behavior: smooth;
   &__body {
     margin: 0;
     min-width: 320px;
+    outline:3px solid lime;
+    overflow-x: hidden;
   }
 
   &__menu{
@@ -34,8 +36,13 @@ scroll-behavior: smooth;
 
 }
 
-  a{
-    cursor: pointer;
-  }
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
 
 
+.article{
+  display: flex;
+  flex-direction: column;
+}

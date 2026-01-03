@@ -1,3 +1,9 @@
 .body {
   margin: 0;
+  outline: 2px solid rgb(10, 233, 10);
+  overflow-x: hidden;
+}
+
+* {
+ box-sizing: border-box;
 }
