@@ -1,6 +1,6 @@
 @mixin on-tablet {
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet-min-width){
    @content;
 
   }
@@ -13,7 +13,7 @@
   }
 }
 
-@mixin constent-pading-inline() {
+@mixin constent-pading-inline (){
   padding-inline: 20px;
 
   @include on-tablet{
@@ -25,6 +25,11 @@
     padding-inline: 72px;
     min-width: 1020px;
   }
+}
+
+.container{
+  @include constent-pading-inline;
+
 }
 
 @mixin top-bar-met-logo-size() {
@@ -44,4 +49,24 @@
     &:hover{
       #{$property}: $toValue;
     }
+}
+
+@mixin page-grid (){
+  --columns:2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include on-tablet(){
+    --columns:6;
+    column-gap: 24px;
+
+  }
+
+  @include on-desktop(){
+    --columns:12;
+    column-gap: 24px;
+
+  }
+
 }

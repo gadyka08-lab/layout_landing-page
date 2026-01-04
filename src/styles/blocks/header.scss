@@ -12,7 +12,9 @@
     width: 280px;
     background-image: url(../images/Title.png);
     margin: 200px auto 290px;
-    
+
+    @include hover (transform, scale(1.2) );
+
   }
 
   &__bottom{

@@ -1,19 +1,23 @@
 .main{
-  display: grid;
-  row-gap: 100px;
-  padding-block: 100px;
 
-  @include constent-pading-inline;
+  &__content{
+    display: grid;
+    row-gap: 100px;
+    padding-block: 100px;
 
-  @include on-tablet{
-    row-gap: 140px;
-    padding-block: 140px;
+    @include constent-pading-inline;
+
+    @include on-tablet{
+      row-gap: 140px;
+      padding-block: 140px;
+    }
+
+    @include on-desktop{
+      row-gap: 140px;
+      padding-block: 140px;
+    }
   }
 
-  @include on-desktop{
-    row-gap: 140px;
-    padding-block: 140px;
-  }
 
 }
 

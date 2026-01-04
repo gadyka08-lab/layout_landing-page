@@ -18,23 +18,28 @@
      column-gap: 24px;
      max-width: 1020px;
      grid-template-columns: repeat(1, 1fr);
+     @include constent-pading-inline;
 
     }
 
   }
 
   &__button-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display:flex;
+    justify-content:center;
+
 
     @include on-tablet{
-      grid-template-columns: repeat(6, 1fr);
+      display:flex;
+      justify-content:center;
 
     }
 
     @include on-desktop{
-      grid-template-columns: repeat(12, 1fr);
+      display:flex;
+      justify-content:center;
+      //grid-template-columns: repeat(12, 1fr);
+      //grid-column: 5 / 9;
 
     }
 
@@ -44,6 +49,8 @@
 
 
   &__button{
+    width: 280px;
+    height: 56px;
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
@@ -51,21 +58,27 @@
     text-align: center;
     color: $aside-menu-color;
     background-color: $aside-red-color;
-    justify-content: center;
     margin-top: 40px;
-    justify-self: center;
+    border: none;
+    font-family: Cinzel, serif;
+
+
 
     // padding-inline: 20px;
 
     @include on-tablet{
-      width: 100%;
+      width: 392px;
+      height: 56px;
+      // width: 100%;
       max-width: 392px;
       grid-column: span 4;
     }
 
     @include on-desktop{
-      width: 100%;
-      max-width: 324px;
+      // width: 100%;
+      width: 324px;
+      height: 56px;
+      //max-width: 324px;
       grid-column:span 4;
     }
   }

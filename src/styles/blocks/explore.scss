@@ -1,9 +1,10 @@
 .explore{
   &__container{
+    @include page-grid;
     display: grid;
     row-gap: 40px;
     grid-template-columns: 1fr;
-    
+
     @include constent-pading-inline;
 
     @include on-tablet{
