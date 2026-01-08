@@ -1,6 +1,7 @@
 .now-on-view{
   align-items: center;
-  outline: 1px solid red;
+  
+  // outline: 1px solid red;
 
   &__pictures{
     display: grid;
@@ -10,8 +11,6 @@
 
     @include on-tablet{
      column-gap: 24px;
-
-
     }
 
     @include on-desktop{
@@ -38,8 +37,9 @@
     @include on-desktop{
       display:flex;
       justify-content:center;
-      //grid-template-columns: repeat(12, 1fr);
-      //grid-column: 5 / 9;
+
+      // grid-template-columns: repeat(12, 1fr);
+      // grid-column: 5 / 9;
 
     }
 
@@ -75,17 +75,19 @@
     }
 
     @include on-desktop{
+
       // width: 100%;
       width: 324px;
       height: 56px;
-      //max-width: 324px;
+
+      // max-width: 324px;
       grid-column:span 4;
     }
   }
 }
 
 .now-on-view__title{
-  background-color:yellow;
+  // background-color:yellow;
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;

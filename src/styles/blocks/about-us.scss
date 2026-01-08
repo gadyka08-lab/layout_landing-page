@@ -1,6 +1,6 @@
 .about-us {
     @include page-grid;
-    
+
   margin-top: 100px;
   gap: 32px 20px;;
 
@@ -9,6 +9,7 @@
   // gap:
 
   @include on-desktop{
+    
     // grid-template-columns: repeat(12, 1fr);
 
     column-gap: 24px;
@@ -18,8 +19,8 @@
   }
 
   @include on-tablet{
-    // grid-template-columns: repeat(6, 1fr);
 
+    // grid-template-columns: repeat(6, 1fr);
     column-gap: 24px;
     margin-top: 140px;
 
@@ -48,11 +49,16 @@
     flex-direction: column;
     gap:24px;
     grid-column: 1 / -1;
-    border: 1px solid blue;
+
+    // border: 1px solid blue;
 
     @include on-tablet {
       gap: 24px;
       grid-column: 4 /-1;
+       display: grid;
+
+      // grid-template-columns: 1fr 1fr;
+
 
     }
 
@@ -60,6 +66,10 @@
       display: grid;
       gap: 24px;
       grid-column: 6 /-1;
+
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+
     }
   }
 
@@ -68,7 +78,8 @@
     grid-template-columns: auto 1fr;
     align-items: start;
     gap: 12px 20px;
-    border: 1px solid yellow;
+
+    // border: 1px solid yellow;
 
 
   }
@@ -120,7 +131,7 @@
 
 
 
-    border: 1px solid red;
+    // border: 1px solid red;
 
 
   }

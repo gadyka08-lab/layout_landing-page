@@ -42,14 +42,6 @@
 
       }
 
-      &__data--span{
-        display: block;
-        font-family: Cinzel,serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 27px;
-        letter-spacing: 0;
-      }
     }
 
 
@@ -57,14 +49,23 @@
       grid-column: 1/-1;
 
       @include on-tablet{
-       grid-column: 1/4;
+        grid-column: 1/4;
       }
 
       @include on-desktop{
-       grid-column: 4/7;
+        grid-column: 4/7;
       }
 
     }
+  }
+
+  &__data--span{
+    display: block;
+    font-family: Cinzel,serif;
+    font-weight: 700 !important;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
   }
 
   &__form--container{
@@ -87,19 +88,20 @@
   }
 
   &__button{
-  width: 100%;
-  font-family: Cinzel, serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: 0;
-  text-align: center;
-  border: none;
+    grid-column: 1/-1;
+    width: 100%;
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    border: none;
 
-  max-width: 280px;
-  min-height: 56px;
-  background-color: $aside-red-color;
-  color:$aside-menu-color;
+    // max-width: 280px;
+    min-height: 56px;
+    background-color: $aside-red-color;
+    color:$aside-menu-color;
 
   &:hover{
     background-color:#AE1C23;
@@ -119,7 +121,7 @@ form {
   gap: 0;
 }
 
-.input{
+input{
   box-sizing: border-box;
   height: 48px;
   width: 100%;

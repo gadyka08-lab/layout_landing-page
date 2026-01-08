@@ -1,24 +1,24 @@
 .footer{
   height: 100%;
   grid-column: 1/-1;
-  background-image:url(../images/footerM.png);
+  background-image:url(../images/footer.png);
   background-size: cover;
   background-position: center;
   outline: 3px solid orange;
   min-height: 180px;
 
   @include on-tablet{
-    background-image:url(../images/footerT.png);
+    background-image:url(../images/footer.png);
     min-height: 359px;
 
   }
 
   @include on-desktop{
-    background-image:url(../images/footerD.png);
+    background-image:url(../images/footer.png);
     min-height: 359px;
 
 
   }
-  
+
 }
 
