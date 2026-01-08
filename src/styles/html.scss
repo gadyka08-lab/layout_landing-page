@@ -2,8 +2,19 @@
   margin: 0;
   outline: 2px solid rgb(10, 233, 10);
   overflow-x: hidden;
+  font-family: Cinzel,serif;
 }
 
 * {
  box-sizing: border-box;
+}
+
+.placeholder{
+  font-family: Cinzel,serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }

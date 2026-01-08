@@ -39,10 +39,16 @@ scroll-behavior: smooth;
 a{
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 
 .article{
   display: flex;
   flex-direction: column;
+}
+
+.form{
+  width: 100%;
+
 }
