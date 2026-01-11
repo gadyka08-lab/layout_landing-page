@@ -62,6 +62,12 @@
     border: none;
     font-family: Cinzel, serif;
     cursor: pointer;
+      &:hover{
+       background-color:#AE1C23;
+      }
+      &:active{
+       background-color: #EB343D;
+      }
 
     // &:hover {
     // transform: scale(1.05);
