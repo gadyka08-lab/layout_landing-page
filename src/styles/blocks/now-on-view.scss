@@ -1,6 +1,6 @@
 .now-on-view{
   align-items: center;
-  
+
   // outline: 1px solid red;
 
   &__pictures{
@@ -61,6 +61,11 @@
     margin-top: 40px;
     border: none;
     font-family: Cinzel, serif;
+    cursor: pointer;
+
+    // &:hover {
+    // transform: scale(1.05);
+    // }
 
 
 
@@ -69,13 +74,13 @@
     @include on-tablet{
       width: 392px;
       height: 56px;
+
       // width: 100%;
       max-width: 392px;
       grid-column: span 4;
     }
 
     @include on-desktop{
-
       // width: 100%;
       width: 324px;
       height: 56px;

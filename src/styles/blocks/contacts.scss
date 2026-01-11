@@ -104,6 +104,11 @@
     letter-spacing: 0;
     text-align: center;
     border: none;
+    cursor: pointer;
+
+    // &:hover {
+    // transform: scale(1.05);
+    // }
 
     // max-width: 280px;
     min-height: 56px;
@@ -125,14 +130,13 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0 !important;
 }
 
 input{
   box-sizing: border-box;
   height: 48px;
   width: 100%;
-  margin-bottom: 16px;
   background-color: #F8F8FA;
   border: 1px solid transparent;
   padding: 12px 16px;
