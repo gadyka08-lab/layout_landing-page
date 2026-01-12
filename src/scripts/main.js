@@ -1,49 +1,22 @@
-'use strict';
-document.addEventListener('DOMContentLoaded', () => {
-  const tooltip = document.querySelector('.tooltip');
-  const phoneBtn = document.querySelector('.icon--phone');
-  const firstLink = tooltip ? tooltip.querySelector('.tooltip__link') : null;
+"use strict";
 
-  if (!tooltip || !phoneBtn) return;
+const page = document.documentElement;
+const tooltip = document.querySelector('.tooltip');
+const phoneBtn = document.querySelector('.icon--phone');
 
-  const toggleTooltip = (forceState) => {
-    let isActive;
 
-    if (typeof forceState === 'boolean') {
-      isActive = forceState;
-      if (isActive) {
-        tooltip.classList.add('is-active');
-      } else {
-        tooltip.classList.remove('is-active');
-      }
-    } else {
-      isActive = tooltip.classList.toggle('is-active');
-    }
-
-    phoneBtn.setAttribute('aria-expanded', String(isActive));
-
-    if (isActive && firstLink) {
-      firstLink.focus();
-    }
-  };
-
-  phoneBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleTooltip();
+if (tooltip && phoneBtn){
+  phoneBtn.addEventListener('mouseenter', () => {
+    tooltip.classList.add('is-open');
   });
 
   document.addEventListener('click', (e) => {
-    if (tooltip.classList.contains('is-active') && !tooltip.contains(e.target)) {
-      toggleTooltip(false);
+    if (tooltip.classList.contains('is-open')&&
+       !phoneBtn.contains(e.target) &&
+       !tooltip.contains(e.target)) {
+
+      tooltip.classList.remove('is-open');
     }
   });
+}
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && tooltip.classList.contains('is-active')) {
-      toggleTooltip(false);
-      phoneBtn.focus();
-    }
-  });
-
-});

@@ -43,7 +43,7 @@
   }
 }
 
-.tooltip.is-active{
+.tooltip.is-open{
   .tooltip__block {
    opacity: 1;
    transform: translateX(-100%);
@@ -53,7 +53,7 @@
 }
 
 @include on-tablet {
-  .tooltip.is-active {
+  .tooltip.is-open {
     .tooltip__block {
       transform: translateX(-110%);
 
@@ -63,7 +63,7 @@
 }
 
 @include on-desktop {
-  .tooltip.is-active{
+  .tooltip.is-open{
     .tooltip__block {
      transform: translateX(-110%);
     }
@@ -73,9 +73,14 @@
 
 
 @include on-tablet {
-  .tooltip.is-active .tooltip__block {
+  .tooltip.is-open .tooltip__block {
     transform: translateX(-110%);
   }
 }
 
 
+.tooltip:hover .tooltip__block {
+  opacity:1;
+  transform:translateX(-100%);
+  pointer-events: auto;
+}
