@@ -24,6 +24,8 @@
     }
   }
 
+
+
   &__met{
     align-items: start;
     @include page-grid;
@@ -70,6 +72,9 @@
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0;
+    &:hover{
+    color: $aside-red-color;
+  }
   }
 
   &__form--container{
@@ -106,9 +111,7 @@
     border: none;
     cursor: pointer;
 
-    // &:hover {
-    // transform: scale(1.05);
-    // }
+
 
     // max-width: 280px;
     min-height: 56px;
