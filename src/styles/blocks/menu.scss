@@ -5,6 +5,10 @@
   background-color: #D12D35;
   font-weight: 700;
   text-transform: uppercase;
+  z-index: 50;
+
+  @include constent-pading-inline;
+
 
   &__The_Met_Fifth_Avenue{
    color: $aside-menu-color;
@@ -38,14 +42,19 @@
 
   &_top{
     margin-bottom: 30px;
-    position: sticky; /* to keep cross always visible */
+    position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: #e5e5e5;
+
+    @include constent-pading-inline;
 
 
     @include on-tablet{
       margin-bottom: 0;
+    }
+    @include on-desktop{
+      @include constent-pading-inline;
     }
 
   }
@@ -59,11 +68,11 @@
      margin-top: 50px;
 
      // padding: 380px 99px 31px 20px ;
-    }
+  }
 
 }
 
-  .call_order{
+.call_order{
     display: block;
     width: fit-content;
     border-bottom: 1px solid $aside-menu-color;
@@ -72,5 +81,5 @@
     letter-spacing: 2px;
     color: $aside-menu-color;
     text-decoration: none;
-  }
+}
 

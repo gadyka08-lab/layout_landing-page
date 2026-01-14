@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 24px;
   position: relative;
+  @include constent-pading-inline;
 
-  
+
 
 
   @include on-tablet {
@@ -39,7 +39,7 @@
   }
 
   &__icons{
-  position: relative;
+   position: relative;
    display: flex;
    gap: 24px;
 
