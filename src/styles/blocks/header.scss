@@ -12,12 +12,12 @@
     letter-spacing: -1.5px;
     white-space: nowrap;
     margin: 0;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 100%;
 
     @include on-tablet{
-      font-size: 64px;
+      font-size: 70px;
     }
 
     @include on-desktop{
@@ -29,10 +29,10 @@
     padding-bottom: 40px;
     margin-bottom: auto;
     margin-top: 0;
-    transform: translateY(-50px);
+    transform: translateY(250px);
 
     @include on-tablet{
-      transform: translateY(150px);
+      transform: translateY(200px);
     }
 
     @include on-desktop{

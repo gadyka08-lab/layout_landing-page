@@ -1,4 +1,4 @@
-.tooltip{
+.tooltip {
   position: relative;
   text-align: right;
   display: inline-block;
@@ -8,13 +8,12 @@
     z-index: 0;
     position: absolute;
     top: -80%;
-    opacity: 0;
+    opacity: 0; // За замовчуванням приховано!!!!
     pointer-events: none;
     left: 0;
     transform: translateX(-50%);
     transition: opacity .3s, transform .3s;
   }
-
   &__text {
     font-size: 16px;
     font-weight: 700;
@@ -26,6 +25,7 @@
     margin: 0;
     padding: 0;
   }
+
 
   &__link {
     display: block;
@@ -41,39 +41,12 @@
   }
 }
 
-.tooltip.is-open{
-  .tooltip__block {
-   opacity: 1;
-   transform: translateX(-100%);
-   z-index: 999;
-   pointer-events: auto;
-  }
-}
-
-@include on-tablet {
-  .tooltip.is-open {
-    .tooltip__block {
-      transform: translateX(-110%);
-    }
-  }
-}
-
 @include on-desktop {
-  .tooltip.is-open{
-    .tooltip__block {
-     transform: translateX(-110%);
-    }
-  }
-}
-
-@include on-tablet {
+  .tooltip:hover .tooltip__block,
   .tooltip.is-open .tooltip__block {
+    opacity: 1;
     transform: translateX(-110%);
+    z-index: 999;
+    pointer-events: auto;
   }
-}
-
-.tooltip:hover .tooltip__block {
-  opacity:1;
-  transform:translateX(-100%);
-  pointer-events: auto;
 }
