@@ -2,12 +2,12 @@
   margin-top: 50px;
 
   &__list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
   &__link{
@@ -18,8 +18,6 @@
     line-height: 22px;
     letter-spacing: 2px;
 
-
-
     &::after{
       content: ' ';
       position: absolute;
@@ -28,17 +26,13 @@
       height: 1px;
       width: 100%;
       background-color: $aside-menu-color;
-
       transition: transform 0.3s;
       transform: scale(0);
-
     }
 
     &:hover::after{
       transform: scale(1);
     }
-
   }
-
 }
 

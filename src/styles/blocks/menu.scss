@@ -59,25 +59,22 @@
 
   }
 
-
-
   &__bottom{
-     display: flex;
-     flex-direction: column;
-     justify-content:flex-end;
-     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-top: 50px;
   }
-
 }
 
 .call_order{
-    display: block;
-    width: fit-content;
-    border-bottom: 1px solid $aside-menu-color;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    color: $aside-menu-color;
-    text-decoration: none;
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid $aside-menu-color;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: $aside-menu-color;
+  text-decoration: none;
 }
 

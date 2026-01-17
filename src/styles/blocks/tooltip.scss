@@ -1,7 +1,7 @@
 .tooltip{
   position: relative;
   text-align: right;
-  display: block;
+  display: inline-block;
   z-index: 10;
 
   &__block {
@@ -9,9 +9,9 @@
     position: absolute;
     top: -80%;
     opacity: 0;
-    pointer-events:none;
+    pointer-events: none;
     left: 0;
-    transform: translateX(-150%);
+    transform: translateX(-50%);
     transition: opacity .3s, transform .3s;
   }
 
@@ -25,7 +25,6 @@
     vertical-align: middle;
     margin: 0;
     padding: 0;
-
   }
 
   &__link {
@@ -38,7 +37,6 @@
     letter-spacing: 0;
     vertical-align: middle;
     margin-bottom: 18px;
-
     text-wrap: nowrap;
   }
 }
@@ -56,10 +54,8 @@
   .tooltip.is-open {
     .tooltip__block {
       transform: translateX(-110%);
-
     }
   }
-
 }
 
 @include on-desktop {
@@ -70,14 +66,11 @@
   }
 }
 
-
-
 @include on-tablet {
   .tooltip.is-open .tooltip__block {
     transform: translateX(-110%);
   }
 }
-
 
 .tooltip:hover .tooltip__block {
   opacity:1;

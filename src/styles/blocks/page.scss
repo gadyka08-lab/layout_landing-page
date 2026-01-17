@@ -4,13 +4,14 @@ color: $main-page-color;
 font-size: 16px;
 line-height: 27px;
 scroll-behavior: smooth;
+overflow-x: hidden;
 
   &__body {
     margin: 0;
     min-width: 320px;
+    overflow-x: hidden;
 
     // outline:3px solid lime;
-    overflow-x: hidden;
   }
 
   &__menu{
@@ -18,12 +19,9 @@ scroll-behavior: smooth;
     top: 0;
     right: 0;
     left: 0;
-
     opacity: 0;
     transition: all 0.3s;
     transform: translateX(-100%);
-
-
     pointer-events: none;
 
     &:target{
@@ -32,9 +30,6 @@ scroll-behavior: smooth;
       pointer-events: all;
     }
   }
-
-
-
 }
 
 a{
@@ -43,17 +38,23 @@ a{
   color: inherit;
 }
 
-
 .article{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form{
   width: 100%;
-
 }
 
 .page:has(.page__menu:target) {
-  overflow: hidden; /* not to scroll the page */
+  overflow: hidden;
 }
+
+.container{
+  width: 100%;
+
+ @include constent-pading-inline;
+}
+

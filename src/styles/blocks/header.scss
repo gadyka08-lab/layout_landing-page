@@ -2,25 +2,43 @@
   background-image: url(../images/bg-image-header.png);
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   &_logo_text{
-    height: 80px;
-    width: 280px;
-    background-image: url(../images/Title.png);
-    margin: 200px auto 290px;
+    text-align: center;
+    color: $aside-menu-color;
+    letter-spacing: -1.5px;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
 
-    @include hover (transform, scale(1.05) );
+    @include on-tablet{
+      font-size: 64px;
+    }
 
+    @include on-desktop{
+      font-size: 80px;
+    }
   }
 
   &__bottom{
     padding-bottom: 40px;
+    margin-bottom: auto;
+    margin-top: 0;
+    transform: translateY(-50px);
 
+    @include on-tablet{
+      transform: translateY(150px);
+    }
 
+    @include on-desktop{
+      transform: translateY(150px);
+
+    }
   }
 
   &__content{
@@ -32,7 +50,7 @@
     @include constent-pading-inline;
 
   }
-
-
 }
+
+
 

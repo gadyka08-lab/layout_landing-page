@@ -1,52 +1,22 @@
 .now-on-view{
   align-items: center;
+  width: 100%;
 
-  // outline: 1px solid red;
-
-  &__pictures{
-    display: grid;
-    column-gap: 20px;
-    grid-template-columns: 1fr;
-
-
-    @include on-tablet{
-     column-gap: 24px;
-    }
-
-    @include on-desktop{
-     column-gap: 24px;
-     max-width: 1020px;
-     grid-template-columns: repeat(1, 1fr);
-     @include constent-pading-inline;
-
-    }
-
-  }
-
+  // border: 1px solid red;
   &__button-container{
     display:flex;
     justify-content:center;
 
-
     @include on-tablet{
       display:flex;
       justify-content:center;
-
     }
 
     @include on-desktop{
       display:flex;
       justify-content:center;
-
-      // grid-template-columns: repeat(12, 1fr);
-      // grid-column: 5 / 9;
-
     }
-
-
   }
-
-
 
   &__button{
     width: 280px;
@@ -69,69 +39,54 @@
        background-color: #EB343D;
       }
 
-    // &:hover {
-    // transform: scale(1.05);
-    // }
-
-
-
-    // padding-inline: 20px;
-
     @include on-tablet{
       width: 392px;
       height: 56px;
-
-      // width: 100%;
       max-width: 392px;
       grid-column: span 4;
     }
 
     @include on-desktop{
-      // width: 100%;
       width: 324px;
       height: 56px;
-
-      // max-width: 324px;
       grid-column:span 4;
+    }
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin-top: 100px;
+
+
+    @include on-tablet{
+     margin-top: 140px;
+     font-size: 48px;
+    }
+
+    @include on-desktop{
+     margin-top: 140px;
+     font-size: 48px;
+    }
+
+    &::after{
+      content: 'Explore exhibition gallery guides, videos, articles, and more.';
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      color: $main-page-color;
+      line-height: 27px;
+      letter-spacing: 0;
+      text-align: center;
+      margin-top:0;
+      margin-bottom: 48px;
     }
   }
 }
 
-.now-on-view__title{
-  // background-color:yellow;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.5px;
-  text-align: center;
-  margin-top: 100px;
-
-
-  @include on-tablet{
-  margin-top: 140px;
-  font-size: 48px;
-  }
-
-  @include on-desktop{
-  margin-top: 140px;
-  font-size: 48px;
-  }
-
-  &::after{
-    content: 'Explore exhibition gallery guides, videos, articles, and more.';
-    display: block;
-    font-weight: 400;
-    font-size: 16px;
-    color: $main-page-color;
-    line-height: 27px;
-    letter-spacing: 0;
-    text-align: center;
-    margin-top:0;
-    margin-bottom: 48px;
-
-  }
-
-}
 
 
 

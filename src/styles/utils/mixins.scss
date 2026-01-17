@@ -13,11 +13,11 @@
   }
 }
 
-@mixin constent-pading-inline (){
+@mixin constent-pading-inline {
   padding-inline: 20px;
 
   @include on-tablet{
-    padding-inline: 72px;
+    padding-inline: 42px;
   }
 
   @include on-desktop{
@@ -27,18 +27,13 @@
   }
 }
 
-.container{
-  @include constent-pading-inline;
-
-}
-
-@mixin top-bar-met-logo-size() {
+@mixin top-bar-met-logo-size {
   height: 65px;
   width: 87px;
 
 }
 
-@mixin top-bar-icon-size() {
+@mixin top-bar-icon-size {
   width: 32px;
   height: 32px;
 }
@@ -51,20 +46,23 @@
     }
 }
 
-@mixin page-grid (){
+@mixin page-grid {
   --columns:2;
+  
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include on-tablet(){
+  @include on-tablet{
     --columns:6;
+
     column-gap: 24px;
 
   }
 
-  @include on-desktop(){
+  @include on-desktop {
     --columns:12;
+
     column-gap: 24px;
 
   }

@@ -19,10 +19,11 @@
 
   &--align--left{
     // outline: 2px dashed orange;
-    
+
     grid-column: 1/-1;
     margin-bottom: 32px;
     text-align:left;
+    padding-left: 20px;
 
 
       @include on-desktop{
@@ -38,7 +39,6 @@
        text-align: left;
 
        // padding-left: 72px;
-
       }
 
     &::before {
@@ -50,12 +50,8 @@
       letter-spacing: 0;
       display: block;
       margin-bottom: 0;
-
-
     }
-
   }
-
 }
 
 

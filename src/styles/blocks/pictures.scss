@@ -3,29 +3,31 @@ img {
   width:100%;
   height:100%;
   object-fit: cover;
-
-  // overflow-clip-margin: content-box;
-  // overflow: clip;
-
-
 }
 
 .pictures{
+  width: 100%;
+  overflow: hidden;
+
   &__photos{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 20px;
+    gap: 20px;
+
+    // row-gap: 20px;
+    width: 100%;
 
     @include on-tablet{
       @include page-grid;
+
+      column-gap: 24px;
     }
+
     @include on-desktop{
       @include page-grid;
+
+      column-gap: 24px;
     }
-
-    width: 100%;
-
-
   }
 
   &__link {
@@ -35,24 +37,18 @@ img {
     display: block;
     @include hover (transform, scale(1.05) );
 
-
     &--big{
       object-fit: cover;
       object-position: top center;
-
       grid-column: span 3;
-
 
       @include on-tablet{
         grid-column: span 4;
-
       }
 
       @include on-desktop{
         grid-column: span 8;
-
       }
-
     }
 
     &--small{
@@ -66,7 +62,6 @@ img {
 
       @include on-desktop{
         grid-column: span 4;
-
       }
     }
 
@@ -89,54 +84,39 @@ img {
         &:last-child{
           display: block;
         }
-
       }
-
     }
 
     &--3-small{
       grid-column: span 3;
       column-gap: 20px;
-
       object-fit: cover;
       object-position: top center;
 
-
       @include on-tablet{
         grid-column: span 2;
-
-
       }
 
       @include on-desktop{
         grid-column: span 4;
-
       }
     }
 
     &--3-big{
       height: 100%;
       width: 100%;
-
-      // display: block;
       object-fit:cover;
       object-position: right center;
       grid-column: span 3;
 
-
       @include on-tablet{
         grid-column: span 4;
-
       }
 
       @include on-desktop{
         grid-column: span 8;
-
       }
-
     }
-
-
   }
 
   &__photo{
@@ -148,19 +128,13 @@ img {
       object-position: left center;
       grid-column: span 3;
 
-
       @include on-tablet{
         grid-column: span 4;
-
       }
 
       @include on-desktop{
         grid-column: span 8;
-
       }
-
-
-
     }
 
     &--right{
@@ -172,15 +146,11 @@ img {
 
       @include on-tablet{
         grid-column: span 2;
-
-
       }
 
       @include on-desktop{
         grid-column: span 4;
-
       }
-
     }
 
     &--second-line{
@@ -192,7 +162,6 @@ img {
 
         grid-column: span 3;
         column-gap: 24px;
-
       }
 
       @include on-desktop{
@@ -200,16 +169,13 @@ img {
 
         grid-column: span 4;
         column-gap: 24px;
-
       }
-
     }
 
     &--third-line-big{
       overflow: hidden;
       object-fit:cover;
       object-position: right center;
-
     }
   }
 
@@ -221,8 +187,6 @@ img {
     color: $aside-red-color;
     margin-top: 24px;
     text-align: left;
-
-
   }
 
   &__data{
@@ -235,9 +199,7 @@ img {
     padding-bottom: 0;
     margin-bottom: 48px;
     text-align:left;
-
   }
-
 }
 
 

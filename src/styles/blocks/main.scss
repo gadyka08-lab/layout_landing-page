@@ -5,8 +5,6 @@
     row-gap: 100px;
     padding-block: 100px;
 
-    @include constent-pading-inline;
-
     @include on-tablet{
       row-gap: 140px;
       padding-block: 140px;
@@ -17,7 +15,6 @@
       padding-block: 140px;
     }
   }
-
-
 }
+
 
