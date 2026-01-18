@@ -82,10 +82,12 @@
       line-height: 27px;
       letter-spacing: 0;
       text-align: center;
-      margin-top:0;
-      margin-bottom: 48px;
+      
+      // margin-top:0;
+      // margin-bottom: 48px;
       margin: auto;
       padding-bottom: 20px;
+
       // align-items: center;
 
       @include on-tablet{
