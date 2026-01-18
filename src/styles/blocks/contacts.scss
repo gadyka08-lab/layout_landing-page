@@ -13,7 +13,8 @@
     letter-spacing: 0;
     color: $main-page-color;
     grid-column: 1/-1;
-    margin-bottom: 16px;
+    margin: 0;
+    // margin-bottom: 16px;
 
     @include on-tablet{
       grid-column: 1/-1;

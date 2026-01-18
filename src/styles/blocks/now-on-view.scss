@@ -73,6 +73,7 @@
     }
 
     &::after{
+      max-width: 280px;
       content: 'Explore exhibition gallery guides, videos, articles, and more.';
       display: block;
       font-weight: 400;
@@ -83,6 +84,20 @@
       text-align: center;
       margin-top:0;
       margin-bottom: 48px;
+      margin: auto;
+      padding-bottom: 20px;
+      // align-items: center;
+
+      @include on-tablet{
+        max-width: 392px;
+
+    }
+
+    @include on-desktop{
+      max-width: 325px;
+    }
+
+
     }
   }
 }
